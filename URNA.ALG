@@ -9,9 +9,9 @@ Var
  numeroCandidato1: inteiro
  numeroCandidato2: inteiro
  numeroCandidato3: inteiro
- nomeCandidato1: inteiro
- nomeCandidato2: inteiro
- nomeCandidato3: inteiro
+ nomeCandidato1: caractere
+ nomeCandidato2: caractere
+ nomeCandidato3: caractere
  contCandidato1: inteiro
  contCandidato2: inteiro
  contCandidato3: inteiro
@@ -79,6 +79,19 @@ Inicio
                leia(voto)
                escreva(" ")
                
+               escolha voto
+               caso numeroCandidato1
+               escreval(numeroCandidato1, " - ", nomeCandidato1)
+               caso numeroCandidato2
+               escreval(numeroCandidato2, " - ", nomeCandidato2)
+               caso numeroCandidato3
+               escreval(numeroCandidato3, " - ", nomeCandidato3)
+               caso 0
+               escreval("0 - voto em branco")
+               outrocaso
+               escreval("Voto em nulo")
+               fimescolha
+               escreval (" ")
                
                escreva("Deseja confirmar o seu voto? (s) ou (n): ")
                leia(resposta)
@@ -89,7 +102,7 @@ Inicio
             escreva("Ainda tem eleitor para votar? (s) ou (n)   ")
             leia (resposta)
             
-            ate(resposta = "s")
+            ate(resposta <> "s")
             
              escreval("=============BOLETIM DE URNA==============")
   escreval(numeroCandidato1, " - ", nomeCandidato1, ": ", contCandidato1)
