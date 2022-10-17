@@ -68,15 +68,28 @@ Inicio
   
   repita
       repita
-            escreva("Deseja confirmar o seu voto? (s) ou (n)   ")
-            leia(resposta)
-
-            ate(resposta = "s")
+      limpatela
+               escreval(numeroCandidato1, " - ", nomeCandidato1)
+               escreval(numeroCandidato2, " - ", nomeCandidato2)
+               escreval(numeroCandidato3, " - ", nomeCandidato3)
+               escreval(" 0 - Branco")
+               escreval(" ")
+               
+               escreva("informe o número do candidato: ")
+               leia(voto)
+               escreva(" ")
+               
+               
+               escreva("Deseja confirmar o seu voto? (s) ou (n): ")
+               leia(resposta)
+               
+               ate (resposta = "s")
+               
             
             escreva("Ainda tem eleitor para votar? (s) ou (n)   ")
             leia (resposta)
             
-            ate(resposta <> "s")
+            ate(resposta = "s")
             
              escreval("=============BOLETIM DE URNA==============")
   escreval(numeroCandidato1, " - ", nomeCandidato1, ": ", contCandidato1)
